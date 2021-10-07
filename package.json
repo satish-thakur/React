@@ -1,6 +1,6 @@
 {
   "name": "hosted-react",
-  "homepage": "https://satish-thakur.github.io/react",
+  "homepage": "https://<satish-thakur>.github.io/<react>/",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
@@ -40,3 +40,4 @@
     ]
   }
 }
+    
