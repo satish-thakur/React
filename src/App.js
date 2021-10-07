@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { useState } from 'react';
+
+import ReactHtmlParser from "react-html-parser";
 
 function App() {
+
+  const [text, setText] = useState('some text ');
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <h3> { ReactHtmlParser(text) } </h3>
+     <button onClick={ () => { setText(text + "hi <br />" ) } }>Click Me</button>
     </div>
   );
 }
